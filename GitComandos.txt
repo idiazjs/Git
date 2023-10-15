@@ -35,6 +35,11 @@ https://gitexplorer.com/
     git commit -a
     git commit -m <message>
 
+// PUSH
+    git push <repo> <branch name>
+    git push -u <repo> <branch name>
+    git push --all <repo>
+
 // DELETE && REMOVE
     git branch -D <branch name>
     git branch -D <branch name> <branch name> <branch name>
