@@ -61,6 +61,7 @@ https://gitexplorer.com/
     git checkout <repo>/<branch> <filename>
     git reset --hard
     git reset --hard <repo>/<branch>
+    git reset <commit-hash>
 
 // SHOW && VIEW
     git status
