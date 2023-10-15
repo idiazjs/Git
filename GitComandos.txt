@@ -1,0 +1,13 @@
+git config --global user.name idiaz
+git config --global user.email idiazlarajesus@gmail.com
+git config --global core.editor "code --wait"
+git config --global core.autocrlf true
+
+git config --global -e
+
+
+git login
+
+git remote -v
+git remote add <url>
+
