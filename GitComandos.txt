@@ -1,13 +1,72 @@
-git config --global user.name idiaz
-git config --global user.email idiazlarajesus@gmail.com
-git config --global core.editor "code --wait"
-git config --global core.autocrlf true
+https://gitexplorer.com/
 
-git config --global -e
+// CONFIG
+    git config --global user.name "username" 
+    git config --global user.email "email address"
+    git config --global core.editor "code --wait"
+    git config --global core.autocrlf true
 
+    git config --global -e
 
-git login
+    // Otros
+    git config --global diff.external "meld"
+    git config --global merge.tool "meld"
+    git config --global user.signingkey <your-secret-gpg-key>
+        gpg --gen-key
 
-git remote -v
-git remote add <url>
+// CLONE
+    git clone <repo-url> <directory>
+    git clone <repo-url> .
+    git clone --recurse-submodules <repo-url> .
+    git submodule update --init --recursive
 
+// ADD
+    git add <file.ext>
+    git add <directory>
+    git add .
+
+        git branch <new name>
+        git checkout -b <new name>
+        git checkout -b <new name> <another branch>
+    
+    git remote add <shortname> <url>
+
+// COMMIT
+    git commit -a
+    git commit -m <message>
+
+// DELETE && REMOVE
+    git branch -D <branch name>
+    git branch -D <branch name> <branch name> <branch name>
+    git tag -d v<tag version>
+    git remote rm <remote>
+    git remote prune <remote-name>
+
+// .gitignore file
+    <filename>.<filname extension>
+    <dir name>/*
+    *.<filename extension>
+
+// MERGE
+    git merge <branch-name>
+    git checkout <branch name> <path to file> --patch
+
+// REVERT && RESET
+    git revert <commit-hash>
+    git checkout <repo>/<branch> <filename>
+    git reset --hard
+    git reset --hard <repo>/<branch>
+
+// SHOW && VIEW
+    git status
+    git log
+        git log -n
+        git log --since=period
+        git log --oneline
+        git log -p
+    git diff
+    git diff --staged
+    git remote -v
+    git stash list
+    git branch
+    git tag
