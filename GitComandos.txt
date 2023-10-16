@@ -28,6 +28,7 @@ https://gitexplorer.com/
         git branch <new name>
         git checkout -b <new name>
         git checkout -b <new name> <another branch>
+        git branch <new name>> <commit-hash>
     
     git remote add <shortname> <url>
 
@@ -57,7 +58,9 @@ https://gitexplorer.com/
     git checkout <branch name> <path to file> --patch
 
 // REVERT && RESET
-    git revert <commit-hash>
+    git revert <commit-hash> -- Requiere aceptar los cambios
+    git reset --hard <hash-del-commit>
+    
     git checkout <repo>/<branch> <filename>
     git reset --hard
     git reset --hard <repo>/<branch>
